@@ -13,32 +13,21 @@ a{
     text-decoration: none;
     color: white;
 }
-li{
-    list-style-type: none;
-}
-
-header{
-    height: 100vh;
-    width: 100%;
-    
-    background-image: url('assets/header1.jpg');
-    background-color: #000;
-    background-size: cover; 
-}
-
-
 .container{
     width: 100%;
     padding: 0 3%;
     margin: 0 auto;
     
 }
+header{
+    background-color: #04234c;
+    padding: 0 3%;
+}
 .navbar{
     border-bottom: 1px solid #ffffff44;
     color: white;
-    
-    padding-top: 1.5rem;
-    padding-bottom: 1rem;
+    padding: 0.5rem 0;
+  
     width: 100%;
     display: flex;
     align-items: center;
@@ -47,9 +36,10 @@ header{
 .logo{
     font-size: 24px;
     font-weight: bold;
-    margin-bottom: 5px;
+   
 }
 .navbar_links{
+    margin-top: 8px;
     display: flex;
     margin-left: 6rem;
 }
@@ -67,50 +57,6 @@ header{
     transition: all 0.1s ease-out;
     margin-bottom: 0;
     border-bottom: 2px solid white; 
-}
-.header_text{
-    width: 100%;
-    height: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-}
-
-.header_title{
-    font-size: 3.6em;
-    
-}
-.header_title span{
-    color: #f2be13;
-}
-.header_subtitle{
-    font-size: 2em;
-    letter-spacing: 0.3rem;
-}
-.header_subtitle__text{
-    margin-top: 0.5rem;
-    font-size: 1.2em;
-    letter-spacing: 0.6px;
-}
-.arrow_container{
-    border-top: 1px solid #ffffff44;
-    padding:0 10px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-}
-
-.arrow-down{
-    cursor: pointer;
-    transition: all 0.3s ease-in;
-    
-}
-.arrow-down:hover{
-    margin-top: 5px;
 }
 .burger_btn{
     display: none;
@@ -163,26 +109,6 @@ header{
     color: black;
     margin-bottom: 1.5rem;
 }
-
-/* almaty info block */
-.city_info__block{
-    margin-top: 3rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    min-height: 100%;
-    
-}
-.city_info{
-    display: flex;
-    flex-direction: column;
-    text-align: justify;
-    width: 50%;
-    min-width: 50%;
-    display: flex;
-    justify-content: space-between;
-}
 ::-webkit-scrollbar {
     width: 5px;
 }
@@ -202,131 +128,120 @@ border-radius: 25%;
 ::-webkit-scrollbar-thumb:hover {
 background: #cdcdcd; 
 }
-.city_info__title{
- font-size: 36px;
+.section_title{
+    font-size: 32px;
+    font-weight: normal;
+    text-align: left;
+    border-bottom: 1px solid #d3d3d3;
+    padding-bottom: 1rem;
+    
 }
-.city_info__text{
+.attractions{
     margin-top: 2rem;
-    padding-right: 1rem;
-    color: #8b8b8b;
-    max-height: 350px;
-    overflow-y: scroll;
-    font-size: 18px;
-    font-weight: lighter;
-    height: 100%;
 }
-.city_info__images{
-    width: 40%;
-    height: 100%;
+.attractions__list{
+display: flex;
+justify-content: flex-start;
+align-items: center;
+flex-wrap: wrap;
+}
+.attractions__list_item{
+    margin-top: 2rem;
     display: flex;
-   justify-content: space-between;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    margin-left: 6rem;
-}
-
-.city_info__image{
-    max-width: 100%;
-    width: 27%;
-    background-size: cover;
-    height: auto;
+    flex-direction: column;
+    max-width: 250px;
     
     
 }
-.city_info__image:nth-child(1){
-    width: 39%;
-    margin-bottom: 0.5rem;
+.attractions__list_item:not(:first-child){
+    margin-left: 2rem;
 }
-.city_info__image:nth-child(2){
-    width: 60%;
-    margin-bottom: 0.5rem;
+.scale{
+    display: inline-block;
+    overflow: hidden;
+    cursor: pointer;
 }
-.city_info__image:nth-child(3){
-    width: 100%;
-}
-
-.city_districts{
-    padding: 0 15%;
-    margin-top: 5rem;
+.card_image{
     width: 100%;
     height: 100%;
     display: block;
+
+    transition: transform 1s ease-out;
 }
-.city_districts__text{
-    color: #8b8b8b;
-    margin-top: 2rem;
-    text-align: justify;
-    font-size: 18px;
-    font-weight: lighter;
-    height: 100%;
+.card_image:hover{
+    transform: scale(1.2);
 }
-.title{
-    font-size: 36px;
-    font-weight: bold;
+.card_info .place{
+    margin-top: 0.5rem;
+    font-size: 14px;
+}
+.place span{
+    color: blue;
+}
+.card_title{
+    margin-top: 0.3rem;
+    font-size: 16px;
+}
+.card_more{
+   margin-top: 0.6rem;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    justify-content: center;
+    background-color: transparent;
+    background-color: #04234c;
+    padding: 0.4rem 0;
+    color: white;
+    
+    
+}
+.card_more svg{
+    margin-left: 0.6rem;
+    margin-right: 0.2rem;
+    
+}
+
+.card_more:hover svg{
+    fill: #04234c;
+}
+footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    
     text-align: center;
-}
-p{
-    color: #8b8b8b;
-    margin-bottom: 0.5rem;
-    text-align: justify;
-    font-size: 18px;
-    font-weight: lighter;
-}
-.city_map{
-    margin-top: 4rem;
-}
-.map{
-    margin-top: 2rem;
-}
-.population{
-    margin-top: 4rem;
-}
-.population p{
-    margin-top: 1rem;
-    padding: 0 15%;
-}
-.todo{
-    margin-top: 4rem;
-    padding: 0 15%;
-}
-.todo_list{
-    margin-top: 2rem;
-}
-.todo_list__item{
-    list-style-type: disc;
-    color: #8b8b8b;
-    margin-bottom: 0.5rem;
-    text-align: justify;
-    font-size: 18px;
-    font-weight: lighter;
-}
-.footer{
-    text-align: center;
-    margin-top: 5rem;
+    
     padding: 1rem 0;
+    height: 50px;
     border-top: 1px solid #d3d3d3;
     color: #8b8b8b;
 }
-
-
-/* attractions */
-
-
-
-
-
-
-/* media queries */
-@media(max-width:600px){
-    .header_title{
-        font-size: 38px;
-    }
-    .header_subtitle{
-        display: block;
-        font-size: 24px;
-    }
+.rating-result {
+	width: 265px;
+	margin: 0 auto;
 }
+.rating-result span {
+	padding: 0;
+	font-size: 18px;
+	
+	line-height: 1;
+	color: lightgrey;
+	text-shadow: 1px 1px #bbb;
+}
+.rating-result > span:before {
+	content: '★';
+}
+.rating-result > span.active {
+	color: gold;
+	text-shadow: 1px 1px #c60;
+}
+
 @media(max-width:1150px){
+    
+    
     .todo{
         padding: 0 3%;
     }
@@ -373,4 +288,39 @@ p{
         padding: 0 3%;
     }
 }
-
+@media (max-width:700px) {
+    .attractions__list{
+        justify-content: space-between;
+        margin-top: 2rem;
+        
+    }
+    .attractions__list_item{
+        margin-left: 0;
+    }
+}
+@media (max-width:600px) {
+    .attractions__list{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .card_image{
+        display: flex;
+        justify-content: center;
+    }
+    .attractions__list_item{
+        margin-top: 1rem;
+        min-width: 100%;
+        
+    }
+    .section_title{
+        font-size: 28px;
+        text-align: center;
+    }
+    .rating-result{
+        margin: 0;
+    }
+    .card_title{
+        font-size: 24px;
+    }
+}
