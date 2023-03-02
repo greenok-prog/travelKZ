@@ -8,3 +8,16 @@ menuBtn.addEventListener('click', () => {
 closeSidebarButton.addEventListener('click', () => {
     sidebar.classList.remove('menu-opened')
 })
+
+
+const info = ['text', 'text', {url:'image'}, 'text']
+
+
+const createInfoBlock = () => {
+    const arr = []
+    info.forEach(el => {
+        typeof el === "string" ? arr.push('Добавить как текст') : arr.push(1)
+    })
+    console.log(arr);
+}
+createInfoBlock()

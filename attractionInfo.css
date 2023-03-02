@@ -1,0 +1,54 @@
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    padding: 0 3%;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+}
+.header_text{
+    z-index: 2;
+    position: relative;
+    
+}
+.header_title{
+    margin-top: 5rem;
+}
+.subtitle_info{
+    margin-top: 1rem;
+    font-size: 1.4em;
+    font-style: italic;
+}
+.main_text{
+    margin-top: 0.7rem;
+    font-size: 16px;
+    color: rgb(45, 45, 45);
+    text-align: justify;
+}
+.main_image{
+    margin-top: 0.7rem;
+}
+.arrow_container{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+    z-index: 3;
+}
+.main_title{
+    text-align: center;
+    font-size: 1.8em;
+    margin-top: 1.5rem;
+}
+.place_images__list .main_image{
+    margin-top: 2rem;
+}
+.map{
+    margin-top: 1rem;
+    width: 100%;
+    height: auto;
+    min-height: 350px;
+}
+

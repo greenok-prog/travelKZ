@@ -309,9 +309,13 @@ footer{
         justify-content: center;
     }
     .attractions__list_item{
+        margin-left: 0;
         margin-top: 1rem;
         min-width: 100%;
         
+    }
+    .attractions__list_item:not(:first-child) {
+        margin-left: 0;
     }
     .section_title{
         font-size: 28px;
